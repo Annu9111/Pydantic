@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Masala Dosa",
+    "price": 80.0,
+    "category": "south_indian",
+    "is_available": true,
+    "description": "Crispy dosa filled with spiced potato masala"
+  },
+  {
+    "id": 2,
+    "name": "Paneer Butter Masala",
+    "price": 180.0,
+    "category": "main_course",
+    "is_available": true,
+    "description": "Paneer cubes cooked in creamy tomato gravy"
+  },
+  {
+    "id": 3,
+    "name": "Veg Biryani",
+    "price": 150.0,
+    "category": "rice",
+    "is_available": true,
+    "description": "Aromatic basmati rice cooked with vegetables and spices"
+  },
+  {
+    "id": 4,
+    "name": "Butter Naan",
+    "price": 40.0,
+    "category": "bread",
+    "is_available": true,
+    "description": "Soft Indian flatbread topped with butter"
+  },
+  {
+    "id": 5,
+    "name": "Margherita Pizza",
+    "price": 199.0,
+    "category": "pizza",
+    "is_available": true,
+    "description": "Classic pizza topped with mozzarella cheese and tomato sauce"
+  },
+  {
+    "id": 6,
+    "name": "Veg Burger",
+    "price": 99.0,
+    "category": "fast_food",
+    "is_available": false,
+    "description": "Vegetable patty burger with lettuce and special sauce"
+  },
+  {
+    "id": 7,
+    "name": "Cold Coffee",
+    "price": 90.0,
+    "category": "beverages",
+    "is_available": true,
+    "description": "Chilled coffee blended with milk and ice cream"
+  },
+  {
+    "id": 8,
+    "name": "Gulab Jamun",
+    "price": 60.0,
+    "category": "dessert",
+    "is_available": true,
+    "description": "Soft milk-solid dumplings soaked in sugar syrup"
+  },
+  {
+    "id": 9,
+    "name": "Samosa",
+    "price": 25.0,
+    "category": "snacks",
+    "is_available": true,
+    "description": "Crispy fried pastry with spiced potato filling"
+  },
+  {
+    "id": 10,
+    "name": "Rasgulla",
+    "price": 70.0,
+    "category": "dessert",
+    "is_available": false,
+    "description": "Soft spongy balls made from chenna and soaked in sugar syrup"
+  },
+  {
+    "id": 11,
+    "name": "Veg Fried Rice",
+    "price": 120.0,
+    "category": "rice",
+    "is_available": true,
+    "description": "Fried rice tossed with vegetables and Chinese spices"
+  },
+  {
+    "id": 12,
+    "name": "French Fries",
+    "price": 80.0,
+    "category": "snacks",
+    "is_available": true,
+    "description": "Golden crispy potato fries seasoned with salt"
+  },
+  {
+    "id": 13,
+    "name": "Chocolate Brownie",
+    "price": 110.0,
+    "category": "dessert",
+    "is_available": true,
+    "description": "Rich chocolate brownie with a soft and fudgy center"
+  },
+  {
+    "id": 14,
+    "name": "Lemon Soda",
+    "price": 45.0,
+    "category": "beverages",
+    "is_available": true,
+    "description": "Refreshing lemon drink with soda and a hint of salt"
+  },
+  {
+    "id": 15,
+    "name": "Chole Bhature",
+    "price": 130.0,
+    "category": "main_course",
+    "is_available": false,
+    "description": "Spicy chickpea curry served with fluffy fried bread"
+  }
+]
