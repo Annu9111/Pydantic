@@ -5,8 +5,8 @@ from typing import Optional
 class Model(BaseModel):
     #value : type
     id     : int
-    name   : str = Field(...)        #required field
-    price : float = Field(...)       #required field
+    name   : str = Field(...,min_length=3,max_length=100,discription="item core")        #required field
+    price : float = Field(...,gt=0)        #required field
     category:str
     is_available : bool = Field(default = True)    #default field
     discription : Optional[str]=None     #optional field
