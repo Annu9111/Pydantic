@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Veg Biryani",
-    "price": 150.0,
+    "price": -150.0,       
     "category": "rice",
     "is_available": true,
     "description": "Aromatic basmati rice cooked with vegetables and spices"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "name": "Veg Burger",
-    "price": 99.0,
+    "price": "fifty",
     "category": "fast_food",
     "is_available": false,
     "description": "Vegetable patty burger with lettuce and special sauce"
