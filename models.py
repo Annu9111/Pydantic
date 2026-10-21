@@ -1,5 +1,6 @@
-from pydantic import BaseModel,Field,field_validator,model_validator,computed_field
+from pydantic import BaseModel,Field,field_validator,model_validator,computed_field,ConfigDict,EmailStr,AnyUrl
 from typing import Optional,Literal
+from datetime import date
 
 
 class Category(BaseModel):
@@ -7,6 +8,15 @@ class Category(BaseModel):
     
     
 class Model(BaseModel):
+    model_config = ConfigDict(
+        extra='allow',      #we decide about extra field should allow,forbid or ignore
+        frozen=True,        # to create frozen model once it is created then not allowed to modified
+        strict=True,   #reduce type coisen
+        validate_assignment=True  #once it is modified then it again check from top to bottom
+        
+        
+    )
+    
     #value : type
     id     : int
     name   : str = Field(...,min_length=3,max_length=100,description="item core")        #required field
@@ -14,6 +24,11 @@ class Model(BaseModel):
     category: Category = Field(...)  
     is_available : bool = Field(default = True)    #default field
     discription : Optional[str]=None     #optional field
+    email :EmailStr      # for valid email
+    url :AnyUrl           #for vaild url
+    Date :date       #vaild date
+    
+    
     
     
     #field validators
@@ -42,4 +57,9 @@ class Model(BaseModel):
     
 item = Model(id = 1,name = "orange",price = 34.5 , category = Category(name="starter"),is_available=True,discription= "orange is sour fruit")
 
-# model_dump ->
+# model_dump() ->convert object to python dictionary
+print(item.model_dump())
+
+#model_dump_json ->object over the internet or the website
+
+print(item.model_dump_json())
